@@ -12,12 +12,28 @@ Vagrant.configure(2) do |config|
   config.ssh.forward_agent = true
 
   $script = <<SCRIPT
-    wget --output-document="/tmp/hugo.deb" https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_amd64.deb
-    dpkg -i /tmp/hugo.deb
+    if ! type hugo > /dev/null 2>&1
+    then
+        wget --output-document="/tmp/hugo.deb" https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_amd64.deb
+        dpkg -i /tmp/hugo.deb
+    fi
     
-    apt-get install ruby-dev -y   
-    gem install travis
-    echo y | travis --version
+    if ! type travis > /dev/null 2>&1
+    then
+        apt-get install python-pip ruby-dev -y  
+        gem install travis
+        echo y | travis --version
+    fi
+    
+    if ! type pip > /dev/null 2>&1
+    then
+        apt-get install python-pip -y  
+    fi
+    
+    if ! type pygmentize > /dev/null 2>&1
+    then
+        pip install pygments
+    fi
 SCRIPT
   config.vm.provision "shell", inline: $script
 end

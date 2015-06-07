@@ -1,0 +1,69 @@
+body {
+  background: #e2e8f2;
+  color: #161718;
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+}
+
+.navbar-brand {
+    width: 180px;
+    height: 50px;
+    background: url('../images/logo-header.png') no-repeat center;
+    background-size: 141px 28px;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: inherit;
+  word-break: break-all;
+  word-wrap: inherit;
+  background-color: inherit;
+  border: inherit;
+  border-radius: inherit;
+}
+
+h1 {
+  color: #333;
+
+}
+
+h2, h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.main-container {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.618;
+}
+
+.main-container p{
+    margin: 2em 0 0.5em 0;
+}
+
+.main-container ul li {
+    margin: 2em 0 0.25em 0;
+}
+
+.main-container h1 {
+    font-size: 3.7rem;
+    line-height: normal;
+    margin-bottom: 13px;
+}
+
+.main-container .date-published {
+    color: #939393;
+    font-size: 16px;
+    margin: 0;
+}
+
+.main-container .highlight {
+  border-radius: 4px;
+}

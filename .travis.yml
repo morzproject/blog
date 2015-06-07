@@ -1,6 +1,9 @@
 before_install:
+  - sudo apt-get update -qq
   - wget https://github.com/spf13/hugo/releases/download/v0.14/hugo_0.14_i386.deb -O hugo.deb
   - sudo dpkg -i hugo.deb
+  - apt-get install python-pip -y
+  - pip install pygments
 
 script: chmod +x deploy.sh && bash ./deploy.sh
 env:
