@@ -6,7 +6,7 @@ rm -rf dist || exit 0;
 mkdir dist;
 
 # run our compile script, discussed above
-./compile.sh
+chmod +x compile.sh && bash ./compile.sh
 
 cp CNAME dist
 
