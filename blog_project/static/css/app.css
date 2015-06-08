@@ -1,10 +1,10 @@
 body {
-    background: #e2e8f2;
-    color: #161718;
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 1;
+    color: #161718;
+    background: #e2e8f2;
 }
 
 .navbar-brand {
@@ -15,31 +15,30 @@ body {
 }
 
 .highlight pre {
-    display: block;
-    padding: 19px;
-    margin: 0 0 10px;
     font-size: 13px;
     line-height: 1.42857143;
-    color: #fff;
-    word-break: break-all;
+    display: block;
+    margin: 0 0 10px;
+    padding: 19px;
     word-wrap: inherit;
-    background-color: inherit;
+    word-break: break-all;
+    color: #fff;
     border: inherit;
     border-radius: inherit;
+    background-color: inherit;
 }
 
 code {
-    padding: 2px 4px;
     font-size: 90%;
-    color: #fff;
     font-weight: 700;
-    background-color: #333;
+    padding: 2px 4px;
+    color: #fff;
     border-radius: 4px;
+    background-color: #333;
 }
 
 h1 {
     color: #333;
-
 }
 
 h2, h3 {
@@ -50,19 +49,21 @@ h2, h3 {
 /* centered columns styles */
 .col-centered {
     float: none;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
 
 .main-container {
-    white-space: -moz-pre-wrap; /* Mozilla */
-    white-space: -hp-pre-wrap; /* HP printers */
-    white-space: -o-pre-wrap; /* Opera 7 */
-    white-space: -pre-wrap; /* Opera 4-6 */
-    white-space: pre-wrap; /* CSS 2.1 */
-    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-    word-wrap: break-word; /* IE */
-    word-break: break-all;
+    font-size: 18px;
+    line-height: 1.618;
+        word-break: break-all;
+        word-break: break-word;
+    -ms-word-break: break-all;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
+    color: #555;
+        -ms-hyphens: auto;
 }
 
 .main-container p {
@@ -80,9 +81,9 @@ h2, h3 {
 }
 
 .main-container .date-published {
-    color: #939393;
     font-size: 16px;
     margin: 0;
+    color: #939393;
 }
 
 .main-container .highlight {
