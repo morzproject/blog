@@ -4,14 +4,11 @@ draft = false
 title = "Simple String Replacement Tool in Linux"
 
 +++
-
-# Simple String Replacement Tool in Linux
-
 First install mysql client (`replace` utility is one of a tool in MySQL package).
 {{< highlight shell >}}
 apt-get install mysql-client
 {{< /highlight >}}
-
+<!--more-->
 Example text in file1.txt:
 {{< highlight text >}}
 I like to drink apple juice.

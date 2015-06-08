@@ -4,9 +4,7 @@ draft = false
 title = "Remove Empty Directories Recursively in Linux"
 
 +++
-
-# Remove Empty Directories Recursively in Linux
-
 {{< highlight shell >}}
 find . -type d -empty -delete
 {{< /highlight >}}
+<!--more-->

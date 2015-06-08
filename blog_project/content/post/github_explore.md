@@ -4,9 +4,7 @@ draft = false
 title = "Github Explore"
 
 +++
-
-# Github Explore
-
 Check out new cool projects everyday. Most of them are MIT and BSD license.
 
 [https://github.com/explore](https://github.com/explore)
+<!--more-->

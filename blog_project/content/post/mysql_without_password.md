@@ -4,14 +4,11 @@ draft = false
 title = "MySQL CLI Without Password"
 
 +++
-
-# MySQL CLI Without Password
-
 Usually this is how to connect to MySQL Server using MySQL client:
 {{< highlight shell >}}
 $ mysql -u mike -p123
 {{< /highlight >}}
-
+<!--more-->
 To connect without needed to insert password(and username) every time, we can pre-configure all credentials in `.my.cnf` file
 {{< highlight shell >}}
 $ cd ~

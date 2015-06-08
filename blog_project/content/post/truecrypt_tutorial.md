@@ -6,9 +6,6 @@ aliases = [
     "/how-to-use-truecrypt/"
 ]
 +++
-
-# How to Use TrueCrypt
-
 TrueCrypt is a one of the best encryption tools to encrypt and secure your files and folders.
 
 [Download TrueCrypt](https://www.grc.com/misc/truecrypt/TrueCrypt%20Setup%207.1a.exe)
@@ -17,7 +14,7 @@ TrueCrypt is a one of the best encryption tools to encrypt and secure your files
 
 Double click `TrueCrypt Setup 7.1a.exe`. Click `Next`.
 {{< figure src="/images/truecrypt_tutorial/truecrypt-1.png" >}}
-
+<!--more-->
 Click `Next`. Click `OK`. Click `Yes`.
 {{< figure src="/images/truecrypt_tutorial/truecrypt-2.png" >}}
 

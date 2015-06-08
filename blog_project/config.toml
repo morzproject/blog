@@ -1,3 +1,4 @@
 BaseURL = "http://blog.morzproject.com/"
 languageCode = "en-us"
 title = "Morz Project | Blog"
+disqusShortname = "morzprojectblog"

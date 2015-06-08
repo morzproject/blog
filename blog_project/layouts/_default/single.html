@@ -24,19 +24,25 @@
         <div class="col-md-8 col-centered">
             <div class="row">
                 <div class="col-md-12">
+                    <h1>{{ .Title }}</h1>
                     {{ .Content }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    {{ if .Prev }}
-                    <a href="{{ .Prev.Permalink }}">Previous</a>
-                    {{ end }}
+                <div class="col-md-12">
+                    <div class="prev_next">
+                        {{ if .Prev }}
+                        <a href="{{ .Prev.Permalink }}">Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        {{ end }}
+                        {{ if .Next }}
+                        <a href="{{ .Next.Permalink }}">Next</a>
+                        {{ end }}
+                    </div>
                 </div>
-                <div class="col-md-6" style="text-align: right">
-                    {{ if .Next }}
-                    <a href="{{ .Next.Permalink }}">Next</a>
-                    {{ end }}
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {{ template "_internal/disqus.html" . }}
                 </div>
             </div>
         </div>

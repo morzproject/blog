@@ -4,15 +4,12 @@ draft = false
 title = "How to Protect a Directory with Password Using .htaccess in Apache2"
 
 +++
-
-# How to Protect a Directory with Password Using .htaccess in Apache
-
 Create a new `.htaccess` file
 {{< highlight shell >}}
 cd /var/www/mywebsite.com/secret
 touch .htaccess
 {{< /highlight >}}
-
+<!--more-->
 Insert this value in the `.htaccess` file
 {{< highlight shell >}}
 AuthType Basic

@@ -3,9 +3,6 @@ date = "2013-05-23T04:39:26+10:00"
 draft = false
 title = "Using Git to Publish Website"
 +++
-
-# Using Git to Publish Website
-
 ## Remote Server (production server)
 
 Create an new empty bare git repository 
@@ -15,7 +12,7 @@ $ cd mywebsite.git
 $ git init --bare
 $ touch hooks/post-receive
 {{< /highlight >}}
-
+<!--more-->
 Insert and save the following value in the `hooks/post-receive` file:
 {{< highlight shell >}}
 #!/bin/bash

@@ -4,9 +4,6 @@ draft = false
 title = "How to Batch Compress PNG Images"
 description = "Quick tutorial on how to batch compress PNG images using pngcrush. Pngcrush is a free tool and available for Windows, Mac and Linux"
 +++
-
-# How to Batch Compress PNG Images
-
 Download [pngcrush](http://sourceforge.net/projects/pmt/files/pngcrush-executables/1.7.85/pngcrush_1_7_85_w32.exe/download)
 
 Create a new `images/compress.bat` file
@@ -17,7 +14,7 @@ for /f "tokens=*" %%x in ('dir /b *.png') do (
 	move /Y temp.png "%%x"
 )
 {{< /highlight >}}
-
+<!--more-->
 Put all `*.png` images under the `images` folder and run
 {{< highlight shell >}}
 $ compress.bat

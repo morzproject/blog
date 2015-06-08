@@ -4,9 +4,6 @@ draft = false
 title = "Get Latest Google Chrome's Version Number Using Command Line"
 
 +++
-
-# Get Latest Google Chrome's Version Number Using Command Line (Windows)
-
 Download [XMLStarlet(~1.5 MB)](http://sourceforge.net/projects/xmlstar/files/xmlstarlet/1.6.1/xmlstarlet-1.6.1-win32.zip/download) and [Curl](http://www.paehl.com/open_source/?download=curl_742_1_ssh2_ssl.zip)
 
 Create a new file, query.xml and insert
@@ -19,7 +16,7 @@ Create a new file, query.xml and insert
    </app>
 </request>
 {{< /highlight >}}
-
+<!--more-->
 Run both Curl and XMLStarlet commands:
 {{< highlight shell >}}
 $ curl -X POST -d @query.xml https://tools.google.com/service/update2 > response.txt

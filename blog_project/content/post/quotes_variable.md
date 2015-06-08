@@ -4,9 +4,6 @@ draft = false
 title = "Shell Script – The Importance of Adding Quotes to Variable"
 
 +++
-
-# Shell Script – The Importance of Adding Quotes to Variable
-
 Example 1 :
 {{< highlight shell >}}
 #!/bin/sh
@@ -16,7 +13,7 @@ if [ $TITLE == "The Magic Ocean" ]; then
    echo "OK"
 fi
 {{< /highlight >}}
-
+<!--more-->
 If you run the above script, you will receive this error message :
 {{< highlight shell-session >}}
 root@ubuntu:~# ./example1.sh

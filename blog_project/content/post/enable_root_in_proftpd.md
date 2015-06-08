@@ -4,16 +4,13 @@ draft = false
 title = "Enable Login as Root in ProFTPD"
 
 +++
-
-# Enable Login as Root in ProFTPD
-
 WARNING, login as root is always bad practise. This tutorial intended for special case and running from within development environment.
 
 Open `proftpd.conf`
 {{< highlight shell >}}
 vi /etc/proftpd/proftpd.conf
 {{< /highlight >}}
-
+<!--more-->
 Insert this value at the end of file
 {{< highlight apacheconf >}}
 <Global>

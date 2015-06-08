@@ -4,13 +4,10 @@ draft = false
 title = "Go Language from Google"
 
 +++
-
-# Go Language from Google
-
 Go (or Golang) is a compiled language and comes with full featured library. It is like Python combined with C++.
 
 [Download Go](https://storage.googleapis.com/golang/go1.4.2.windows-386.msi) and install.
-
+<!--more-->
 Create a new file . e.g. `test.go`
 {{< highlight go >}}
 package main

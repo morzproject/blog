@@ -4,9 +4,6 @@ draft = false
 title = "Compile Static Library of libpng Using Visual Studio"
 
 +++
-
-# Compile Static Library of libpng Using Visual Studio
-
 Compile `zlib` first (follow [these steps]({{< relref "compile_static_zlib.md" >}})).
 
 
@@ -19,7 +16,7 @@ Create a new `zlib` folder inside it:
 $ cd lpng1617
 $ mkdir zlib
 {{< /highlight >}}
-
+<!--more-->
 Copy(output from [these steps]({{< relref "compile_static_zlib.md" >}}) ) `zlib.lib`, `zconf.h` and `zlib.h` to the new zlib folder.
 
 Build:

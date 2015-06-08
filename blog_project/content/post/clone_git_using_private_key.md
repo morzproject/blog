@@ -4,9 +4,6 @@ draft = false
 title = "Clone a Git Repository Using Private Key on Ubuntu"
 description = "A simple guide on how to clone a git repository using private key on Ubuntu (or any Linux distro)."
 +++
-
-# Clone a Git Repository Using Private Key in Ubuntu
-
 Have you ever received this error message?
 {{< highlight shell >}}
 $ git clone git@bitbucket.org:mike/web-app.git
@@ -24,7 +21,7 @@ Make sure ssh-agent is running
 $ ps -e | grep sh-agent
  1525 ?        00:00:00 ssh-agent
 {{< /highlight >}}
- 
+ <!--more-->
 If not, then start it by using the following command:
 {{< highlight shell >}}
 $ ssh-agent /bin/bash

@@ -4,8 +4,6 @@ draft = false
 title = "Create a Subdomain in Apache2"
 
 +++
-
-# Create a Subdomain in Apache2
 Let's say you have a domain mywebsite.com and you want to add a subdomain blog.mywebsite.com. Here's how to do it.
 
 Create an apache config file:
@@ -13,7 +11,7 @@ Create an apache config file:
 touch /etc/apache2/site-available/blog.mywebsite.com
 vi /etc/apache2/site-available/blog.mywebsite.com
 {{< /highlight >}}
-
+<!--more-->
 Insert this configuration:
 {{< highlight apacheconf >}}
 <VirtualHost *:80>

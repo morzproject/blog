@@ -4,9 +4,6 @@ draft = false
 title = "Compile Static Library of zlib Using Visual Studio"
 
 +++
-
-# Compile Static Library of zlib Using Visual Studio
-
 [Download](http://zlib.net/zlib128.zip) and extract zlib
 
 Launch VS commad prompt: Microsoft Visual Studio 2008 -> Visual Studio Tools -> Visual Studio 2008 Command Prompt
@@ -16,7 +13,7 @@ Build:
 $ cd zlib-1.2.8
 $ nmake /f win32/Makefile.msc
 {{< /highlight >}}
-
+<!--more-->
 Output in `zlib-1.2.8` folder
 
     zlib.lib <- our static library. yeah!

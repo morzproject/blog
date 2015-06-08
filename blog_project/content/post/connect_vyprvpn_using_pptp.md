@@ -4,20 +4,19 @@ draft = false
 title = "Connect to VyprVPN using PPTP on Ubuntu Server"
 
 +++
-# Connect to VyprVPN using PPTP on Ubuntu Server
-
+{{< figure src="/images/connect_vyprvpn_using_pptp/hero.png" >}}
 ## 1. Configuration
 
 Install pptp client
 {{< highlight shell >}}
 apt-get install pptp-linux
 {{< /highlight >}}
-
+<!--more-->
 Create a new config file. Let's put the name as jp1.vyprvpn:
 {{< highlight shell >}}
 vi /etc/ppp/peers/jp1.vyprvpn
 {{< /highlight >}}
-
+<!--more-->
 Insert below content and save. Replace EMAIL with your login to VyprVPN. In this example, I use Japan server for the remote location (`jp1.vpn.goldenfrog.com`). You may replace to any server from this list https://www.goldenfrog.com/support/vyprvpn/vpn-setup/linux/pptp
 {{< highlight shell >}}
 pty "pptp jp1.vpn.goldenfrog.com --nolaunchpppd"

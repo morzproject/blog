@@ -7,13 +7,6 @@ body {
     background: #e2e8f2;
 }
 
-.navbar-brand {
-    width: 180px;
-    height: 50px;
-    background: url('../images/logo-header.png') no-repeat center;
-    background-size: 141px 28px;
-}
-
 .highlight pre {
     font-size: 13px;
     line-height: 1.42857143;
@@ -39,6 +32,16 @@ code {
 
 h1 {
     color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h1 a {
+    color: #333;
+}
+
+h1 a:hover {
+    color: #333;
 }
 
 h2, h3 {
@@ -53,17 +56,21 @@ h2, h3 {
     margin-left: auto;
 }
 
+.prev_next {
+    margin: 20px 0 20px 0;
+}
+
 .main-container {
     font-size: 18px;
     line-height: 1.618;
-        word-break: break-all;
-        word-break: break-word;
+    word-break: break-all;
+    word-break: break-word;
     -ms-word-break: break-all;
     -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-            hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
     color: #555;
-        -ms-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 .main-container p {
@@ -88,4 +95,9 @@ h2, h3 {
 
 .main-container .highlight {
     border-radius: 4px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
