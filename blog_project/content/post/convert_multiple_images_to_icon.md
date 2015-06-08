@@ -2,7 +2,9 @@
 date = "2013-06-13T00:33:48+10:00"
 draft = false
 title = "Convert Multiple PNG Images Into a Single Icon File"
-
+aliases = [
+    "/convert-multiple-png-images-into-a-single-icon-file/"
+]
 +++
 
 # Convert Multiple PNG Images Into a Single Icon File
