@@ -1,8 +1,8 @@
 +++
-date = "2015-03-02T11:20:30+10:00"
+date = "2013-06-14T17:34:35+10:00"
 draft = false
-title = "Clone a Git Repository Using Private Key in Ubuntu"
-
+title = "Clone a Git Repository Using Private Key on Ubuntu"
+description = "A simple guide on how to clone a git repository using private key on Ubuntu (or any Linux distro)."
 +++
 
 # Clone a Git Repository Using Private Key in Ubuntu

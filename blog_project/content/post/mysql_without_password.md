@@ -1,5 +1,5 @@
 +++
-date = "2015-03-02T11:13:58+10:00"
+date = "2013-05-24T04:54:16+10:00"
 draft = false
 title = "MySQL CLI Without Password"
 

@@ -1,8 +1,8 @@
 +++
-date = "2015-03-02T11:19:09+10:00"
+date = "2013-06-06T06:07:58+10:00"
 draft = false
 title = "Check Free Memory in Linux"
-
+description = "Did you ever wonder why your linux machine is using too much RAM? This article will explain on how to check free memory in Linux."
 +++
 
 # Check Free Memory in Linux

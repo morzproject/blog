@@ -21,14 +21,24 @@
 <body>
 <div class="container main-container">
     <div class="row">
-        <div class="col-md-2">
-
-        </div>
-        <div class="col-md-8">
-{{ .Content }}  
-        </div>
-        <div class="col-md-2">
-
+        <div class="col-md-8 col-centered">
+            <div class="row">
+                <div class="col-md-12">
+                    {{ .Content }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    {{ if .Prev }}
+                    <a href="{{ .Prev.Permalink }}">Previous</a>
+                    {{ end }}
+                </div>
+                <div class="col-md-6" style="text-align: right">
+                    {{ if .Next }}
+                    <a href="{{ .Next.Permalink }}">Next</a>
+                    {{ end }}
+                </div>
+            </div>
         </div>
     </div>
 </div>

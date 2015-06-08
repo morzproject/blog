@@ -1,5 +1,5 @@
 +++
-date = "2015-03-02T11:17:54+10:00"
+date = "2013-05-26T07:23:22+10:00"
 draft = false
 title = "Compile Static Library of libpng Using Visual Studio"
 

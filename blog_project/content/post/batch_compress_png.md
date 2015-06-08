@@ -1,14 +1,13 @@
 +++
-date = "2015-03-02T11:14:32+10:00"
+date = "2013-05-24T19:15:18+10:00"
 draft = false
 title = "How to Batch Compress PNG Images"
-
+description = "Quick tutorial on how to batch compress PNG images using pngcrush. Pngcrush is a free tool and available for Windows, Mac and Linux"
 +++
 
 # How to Batch Compress PNG Images
 
 Download [pngcrush](http://sourceforge.net/projects/pmt/files/pngcrush-executables/1.7.85/pngcrush_1_7_85_w32.exe/download)
-
 
 Create a new `images/compress.bat` file
 {{< highlight batch >}}

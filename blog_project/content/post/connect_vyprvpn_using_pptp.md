@@ -1,5 +1,5 @@
 +++
-date = "2015-03-02T11:27:30+10:00"
+date = "2014-06-29T10:16:40+10:00"
 draft = false
 title = "Connect to VyprVPN using PPTP on Ubuntu Server"
 
@@ -18,7 +18,7 @@ Create a new config file. Let's put the name as jp1.vyprvpn:
 vi /etc/ppp/peers/jp1.vyprvpn
 {{< /highlight >}}
 
-Insert below content and save. Replace EMAIL with your login to VyprVPN. In this example, I use Japan server for the remote location (jp1.vpn.goldenfrog.com). You may replace to any server from this list https://www.goldenfrog.com/support/vyprvpn/vpn-setup/linux/pptp
+Insert below content and save. Replace EMAIL with your login to VyprVPN. In this example, I use Japan server for the remote location (`jp1.vpn.goldenfrog.com`). You may replace to any server from this list https://www.goldenfrog.com/support/vyprvpn/vpn-setup/linux/pptp
 {{< highlight shell >}}
 pty "pptp jp1.vpn.goldenfrog.com --nolaunchpppd"
 lock

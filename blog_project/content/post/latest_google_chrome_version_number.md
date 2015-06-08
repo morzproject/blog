@@ -1,11 +1,11 @@
 +++
-date = "2015-03-02T11:16:54+10:00"
+date = "2013-05-25T00:01:05+10:00"
 draft = false
-title = "Get Latest Google Chrome’s Version Number Using Command Line"
+title = "Get Latest Google Chrome's Version Number Using Command Line"
 
 +++
 
-# Get Latest Google Chrome’s Version Number Using Command Line (Windows)
+# Get Latest Google Chrome's Version Number Using Command Line (Windows)
 
 Download [XMLStarlet(~1.5 MB)](http://sourceforge.net/projects/xmlstar/files/xmlstarlet/1.6.1/xmlstarlet-1.6.1-win32.zip/download) and [Curl](http://www.paehl.com/open_source/?download=curl_742_1_ssh2_ssl.zip)
 

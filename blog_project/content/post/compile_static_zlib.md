@@ -1,5 +1,5 @@
 +++
-date = "2015-03-02T11:17:32+10:00"
+date = "2013-05-26T06:23:58+10:00"
 draft = false
 title = "Compile Static Library of zlib Using Visual Studio"
 
