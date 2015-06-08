@@ -1,7 +1,19 @@
 +++
 date = "2015-03-02T11:19:09+10:00"
 draft = false
-title = "check_free_memory_linux"
+title = "Check Free Memory in Linux"
 
 +++
 
+# Check Free Memory in Linux
+
+Run free `-m` (the `-m` means display the amount of memory in megabytes.)
+{{< highlight java >}}
+$ free -m
+             total       used       free     shared    buffers     cached
+Mem:           495        482         13          0         26        362
+-/+ buffers/cache:         92        402
+Swap:          508          0        508
+{{< /highlight >}}
+
+The 'actual' free memory is at the second line, 402 MB .To understand more about the memory in Linux, the website [Linux ate my ram](http://www.linuxatemyram.com/) explains in humorous way.

@@ -1,22 +1,21 @@
 +++
 date = "2015-03-02T11:25:09+10:00"
 draft = false
-title = "create_subdomain_apache"
+title = "Create a Subdomain in Apache2"
 
 +++
 
-Let’s say you have a domain mywebsite.com and you want to add a subdomain blog.mywebsite.com. Here’s how to do it.
+# Create a Subdomain in Apache2
+Let's say you have a domain mywebsite.com and you want to add a subdomain blog.mywebsite.com. Here's how to do it.
 
 Create an apache config file:
-
-```
+{{< highlight shell-session >}}
 touch /etc/apache2/site-available/blog.mywebsite.com
 vi /etc/apache2/site-available/blog.mywebsite.com
-```
+{{< /highlight >}}
 
 Insert this configuration:
-
-```
+{{< highlight apacheconf >}}
 <VirtualHost *:80>
 	ServerAdmin webmaster@localhost
 
@@ -34,18 +33,16 @@ Insert this configuration:
 
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-```
+{{< /highlight >}}
 
 Enable the new config
-
-```
+{{< highlight shell-session >}}
 a2ensite blog.mywebsite.com
-```
+{{< /highlight >}}
 
 Put all files under /var/www/blog.mywebsite.com and done!
 
 P/S : To remove a subdomain, run :
-
-```
+{{< highlight shell-session >}}
 a2dissite blog.mywebsite.com
-```
+{{< /highlight >}}

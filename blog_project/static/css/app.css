@@ -14,18 +14,27 @@ body {
     background-size: 141px 28px;
 }
 
-pre {
+.highlight pre {
   display: block;
-  padding: 9.5px;
+  padding: 19px;
   margin: 0 0 10px;
   font-size: 13px;
   line-height: 1.42857143;
-  color: inherit;
+  color: #fff;
   word-break: break-all;
   word-wrap: inherit;
   background-color: inherit;
   border: inherit;
   border-radius: inherit;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  font-weight: 700;
+  background-color: #333;
+  border-radius: 4px;
 }
 
 h1 {

@@ -1,22 +1,21 @@
 +++
 date = "2015-03-01T00:13:33+10:00"
 draft = false
-title = "json_command_line_tool"
+title = "JSON Command Line Tool"
 
 +++
 
-Meet jq . http://stedolan.github.io/jq/ .
+Meet jq . [http://stedolan.github.io/jq/](http://stedolan.github.io/jq/) .
 
 A simple command line tool to process JSON file.
 
-{{< highlight shell >}}
+{{< highlight shell-session >}}
 $ echo {} > test.json
 $ jq ".name = "Mike"" test.json
 {{< /highlight >}}
 
 output :
-
-{{< highlight javascript  >}}
+{{< highlight json  >}}
 {
  "name": "Mike"
 }

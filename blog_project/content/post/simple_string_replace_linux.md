@@ -1,24 +1,28 @@
 +++
 date = "2015-03-02T11:22:42+10:00"
 draft = false
-title = "simple_string_replace_linux"
+title = "Simple String Replacement Tool in Linux"
 
 +++
 
-Example file1.txt
+# Simple String Replacement Tool in Linux
 
-```
+First install mysql client (`replace` utility is one of a tool in MySQL package).
+{{< highlight shell >}}
+apt-get install mysql-client
+{{< /highlight >}}
+
+Example text in file1.txt:
+{{< highlight text >}}
 I like to drink apple juice.
-```
+{{< /highlight >}}
 
 Replace `apple` with `orange`
-
-```
+{{< highlight text >}}
 $ replace apple orange -- file1.txt
-```
+{{< /highlight >}}
 
-output
-
-```
+output :
+{{< highlight text >}}
 I like to drink orange juice.
-```
+{{< /highlight >}}
