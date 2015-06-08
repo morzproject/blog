@@ -4,7 +4,7 @@ draft = false
 title = "Connect to VyprVPN using PPTP on Ubuntu Server"
 
 +++
-{{< figure src="/images/connect_vyprvpn_using_pptp/hero.png" >}}
+{{< figure src="/images/connect-vyprvpn-using-pptp/hero.png" >}}
 ## 1. Configuration
 
 Install pptp client

@@ -7,4 +7,4 @@ description = "Quick and accurate way to check a SHA1 or MD5 value on any files 
 Download and install Hash & CRC module from [Febooti Software](http://www.febooti.com/products/filetweak/members/hash-and-crc/)
 <!--more-->
 Right click on any file -> `Properties` -> `Hash / CRC`
-{{< figure src="/images/check_sha1_md5_windows/sha1_crc_feeboti.png" >}}
+{{< figure src="/images/check-sha1-md5-windows/sha1-crc-feeboti.png" >}}
