@@ -2,7 +2,9 @@
 date = "2013-05-24T21:30:08+10:00"
 draft = false
 title = "How to Use TrueCrypt"
-
+aliases = [
+    "/how-to-use-truecrypt/"
+]
 +++
 
 # How to Use TrueCrypt
