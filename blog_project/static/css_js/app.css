@@ -7,6 +7,13 @@ body {
     background: #e2e8f2;
 }
 
+.logo {
+    display: inline-block;
+    height: 107px;
+    width: 312px;
+    background: url(../images/logo.png);
+}
+
 .highlight pre {
     font-size: 13px;
     line-height: 1.42857143;
@@ -67,14 +74,7 @@ h2, h3 {
 .main-container {
     font-size: 18px;
     line-height: 1.618;
-    word-break: break-all;
-    word-break: break-word;
-    -ms-word-break: break-all;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
     color: #555;
-    -ms-hyphens: auto;
 }
 
 .main-container p {
@@ -107,6 +107,11 @@ img {
 }
 
 .preview {
-    border-bottom: solid 2px #ccd0d9;
+    border-bottom: solid 3px #f6bb43;
     padding-bottom: 25px;
+}
+
+.header {
+    padding: 40px 0 40px 0;
+    background-color: #f6bb43;
 }

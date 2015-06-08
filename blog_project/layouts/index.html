@@ -7,12 +7,28 @@
     <meta name="description" content="I love open source">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css_js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css_js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="css/app.css" rel="stylesheet">
+    <link href="/css_js/app.css" rel="stylesheet">
 </head>
 <body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-centered">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="{{ .Site.BaseURL }}">
+                            <div class="logo"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container main-container">
     <div class="row">
         <div class="col-md-8 col-centered">
@@ -20,12 +36,14 @@
                 <div class="col-md-12">
                     {{ range first 5 .Data.Pages }}
                     <div class="preview">
-                        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+
                         <p class="date-published">{{ .Date.Format "January 2, 2006" }}</p>
                         {{ .Summary }}
                         {{ if .Truncated }}
                         <div class="read-more-link">
-                            <a href="{{ .RelPermalink }}">[ + Read More ]</a>
+                            <a class="btn btn-default" href="{{ .RelPermalink }}">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
                         </div>
                         {{ end }}
                     </div>

@@ -7,7 +7,8 @@
     <title>OnLeave - Blog</title>
 
     <!-- Bootstrap -->
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css_js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css_js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
@@ -17,16 +18,35 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="/css_js/app.css" rel="stylesheet">
 </head>
 <body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-centered">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="{{ .Site.BaseURL }}">
+                            <div class="logo"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container main-container">
     <div class="row">
         <div class="col-md-8 col-centered">
             {{ range .Data.Pages }}
             <li>
-    <span><a href="{{ .Permalink }}">{{ .Title }}</a> <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2,  2006" }}
-    </time></span>
+    <span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <time class="pull-right post-list">
+            {{ .Date.Format "Mon, Jan 2, 2006" }}
+        </time>
+    </span>
             </li>
             {{ end }}
         </div>
