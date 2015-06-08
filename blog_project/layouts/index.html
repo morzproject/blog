@@ -21,15 +21,14 @@
                     {{ range first 5 .Data.Pages }}
                     <div class="preview">
                         <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-                        <p class="date-published">{{ .Date.Format "January 2, 2006" }} &middot;</p>
+                        <p class="date-published">{{ .Date.Format "January 2, 2006" }}</p>
                         {{ .Summary }}
                         {{ if .Truncated }}
                         <div class="read-more-link">
-                            <a href="{{ .RelPermalink }}">Read More…</a>
+                            <a href="{{ .RelPermalink }}">[ + Read More ]</a>
                         </div>
                         {{ end }}
                     </div>
-                    <div style="display:block;margin-top:150px;"></div>
                     {{ end }}
                 </div>
             </div>

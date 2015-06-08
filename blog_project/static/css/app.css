@@ -44,6 +44,10 @@ h1 a:hover {
     color: #333;
 }
 
+h2 {
+    font-size: 25px;
+}
+
 h2, h3 {
     margin-top: 40px;
     margin-bottom: 10px;
@@ -57,7 +61,7 @@ h2, h3 {
 }
 
 .prev_next {
-    margin: 20px 0 20px 0;
+    margin: 50px 0 70px 0;
 }
 
 .main-container {
@@ -100,4 +104,9 @@ h2, h3 {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.preview {
+    border-bottom: solid 2px #ccd0d9;
+    padding-bottom: 25px;
 }

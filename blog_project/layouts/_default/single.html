@@ -32,10 +32,10 @@
                 <div class="col-md-12">
                     <div class="prev_next">
                         {{ if .Prev }}
-                        <a href="{{ .Prev.Permalink }}">Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-default" href="{{ .Prev.Permalink }}">Older posts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {{ end }}
                         {{ if .Next }}
-                        <a href="{{ .Next.Permalink }}">Next</a>
+                        <a class="btn btn-default" href="{{ .Next.Permalink }}">Newer posts</a>
                         {{ end }}
                     </div>
                 </div>
