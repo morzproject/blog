@@ -7,13 +7,6 @@ body {
     background: #e2e8f2;
 }
 
-.logo {
-    display: inline-block;
-    height: 107px;
-    width: 312px;
-    background: url(../images/logo.svg);
-}
-
 .highlight pre {
     font-size: 13px;
     line-height: 1.42857143;
