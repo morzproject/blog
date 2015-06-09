@@ -11,7 +11,7 @@ body {
     display: inline-block;
     height: 107px;
     width: 312px;
-    background: url(../images/logo.png);
+    background: url(../images/logo.svg);
 }
 
 .highlight pre {
@@ -41,6 +41,7 @@ h1 {
     color: #333;
     font-size: 1.5rem;
     font-weight: 700;
+    font-family: 'Roboto Slab', serif;
 }
 
 h1 a {

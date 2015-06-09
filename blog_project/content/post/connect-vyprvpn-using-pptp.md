@@ -16,14 +16,14 @@ Create a new config file. Let's put the name as jp1.vyprvpn:
 vi /etc/ppp/peers/jp1.vyprvpn
 {{< /highlight >}}
 <!--more-->
-Insert below content and save. Replace EMAIL with your login to VyprVPN. In this example, I use Japan server for the remote location (`jp1.vpn.goldenfrog.com`). You may replace to any server from this list https://www.goldenfrog.com/support/vyprvpn/vpn-setup/linux/pptp
+Insert the following content and save. Replace `<EMAIL>` with your login to VyprVPN. In this example, I use Japan server for the remote location (`jp1.vpn.goldenfrog.com`). You may replace to any server from this list https://www.goldenfrog.com/support/vyprvpn/vpn-setup/linux/pptp
 {{< highlight shell >}}
 pty "pptp jp1.vpn.goldenfrog.com --nolaunchpppd"
 lock
 noauth
 nobsdcomp
 nodeflate
-name EMAIL
+name <EMAIL>
 remotename jp1.vyprvpn
 ipparam jp1.vyprvpn
 require-mppe-128
@@ -32,14 +32,14 @@ defaultroute
 persist
 {{< /highlight >}}
 
-Now edit /etc/ppp/chap-secrets file and insert your EMAIL and PASSWORD:
+Now edit `/etc/ppp/chap-secrets` file and replace the `<EMAIL>` and `<PASSWORD>` with your VyprVpn credentials:
 {{< highlight shell >}}
 # Secrets for authentication using CHAP
 # client server secret IP addresses
-EMAIL jp1.vyprvpn PASSWORD *
+<EMAIL> jp1.vyprvpn <PASSWORD> *
 {{< /highlight >}}
 
-Create and insert below content to /etc/ppp/ip-up.local
+Insert the following content to ``/etc/ppp/ip-up.local``
 {{< highlight shell >}}
 #!/bin/bash
 H=`ps aux | grep 'pppd pty' | grep -v grep | awk '{print $14}'`
