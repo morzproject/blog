@@ -1,39 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Morz Project | Blog</title>
-    <meta name="description" content="I love open source">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css_js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css_js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="/css_js/app.css" rel="stylesheet">
-</head>
+{{ partial "head.html" . }}
 <body>
-<div class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-centered">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a href="{{ .Site.Permalinks }}">
-                            <div class="logo"></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{{ partial "header.html" . }}
 <div class="container main-container">
     <div class="row">
         <div class="col-md-8 col-centered">
             <div class="row">
                 <div class="col-md-12">
-                    {{ range first 5 .Data.Pages }}
+                    {{ range (.Paginator 5).Pages }}
                     <div class="preview">
                         <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
 
@@ -50,15 +23,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-
-                </div>
-                <div class="col-md-6" style="text-align: right">
-
+                <div class="col-md-12">
+                    {{ template "_internal/pagination.html" . }}
                 </div>
             </div>
         </div>
     </div>
+    {{ partial "footer.html" . }}
 </div>
 </body>
 </html>
