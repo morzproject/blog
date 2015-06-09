@@ -10,5 +10,3 @@ cd blog_project && hugo
 popd
 
 mv blog_project/public dist
-
-mv google92230ceba9ddc401.html dist
