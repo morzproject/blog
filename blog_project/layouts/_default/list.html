@@ -4,16 +4,18 @@
 <div class="container main-container">
     <div class="row">
         <div class="col-md-8 col-centered">
-            {{ range .Data.Pages }}
-            <li>
-                <span>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    <time class="pull-right post-list">
-                        {{ .Date.Format "Mon, Jan 2, 2006" }}
-                    </time>
-                </span>
-            </li>
-            {{ end }}
+            <div class="archive">
+                <ul>
+                    {{ range .Data.Pages }}
+                        <li>
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            <time class="pull-right post-list">
+                                {{ .Date.Format "Mon, Jan 2, 2006" }}
+                            </time>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
         </div>
     </div>
     {{ partial "footer.html" . }}

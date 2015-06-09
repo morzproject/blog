@@ -4,31 +4,7 @@
 <div class="container main-container">
     <div class="row">
         <div class="col-md-8 col-centered">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>{{ .Title }}</h1>
-                    {{ .Content }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="prev_next">
-                        {{ if .Prev }}
-                        <a class="btn btn-default" href="{{ .Prev.Permalink }}"><i class="fa fa-arrow-left"></i> Newer
-                            posts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {{ end }}
-                        {{ if .Next }}
-                        <a class="btn btn-default" href="{{ .Next.Permalink }}">Older posts <i
-                                class="fa fa-arrow-right"></i></a>
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    {{ template "_internal/disqus.html" . }}
-                </div>
-            </div>
+            {{ .Content }}
         </div>
     </div>
     {{ partial "footer.html" . }}

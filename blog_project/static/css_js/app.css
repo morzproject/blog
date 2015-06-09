@@ -79,11 +79,11 @@ h2, h3 {
 }
 
 .main-container p {
-    margin: 2em 0 0.5em 0;
+    margin: 2em 0 .5em 0;
 }
 
 .main-container ul li {
-    margin: 2em 0 0.25em 0;
+    margin: 2em 0 .25em 0;
 }
 
 .main-container h1 {
@@ -164,4 +164,46 @@ img {
 
 .footer {
     margin: 50px 0 60px 0;
+}
+
+.archive {
+    margin-top: 30px;
+}
+
+.archive ul {
+    list-style-type: none;
+}
+
+.top-navigation {
+    margin-top: 15px;
+    line-height: 2;
+}
+
+.top-navigation a {
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 6px 0 6px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.top-link {
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 5px 3px 5px;
+}
+
+.my-archive {
+    background-color: #8cc051;
+}
+
+.my-github {
+    background-color: #3daed8;
+}
+
+.my-contact {
+    background-color: #957cd8;
 }
