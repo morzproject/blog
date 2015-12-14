@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Morz Project | Check Free Memory in Linux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/css_js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css_js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto' rel='stylesheet' type='text/css'>
+    <link href="/css_js/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-centered">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="http://blog.morzproject.com/">
+                            <img src="http://blog.morzproject.com//images/logo.svg"/>
+                        </a>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="top-navigation">
+                            <a href="/post" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-database top-link my-archive"></i> Archive</a>
+
+                            <a href="https://github.com/blackrosezy" target="_blank" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-github top-link my-github"></i> Github</a>
+
+                            <a href="/contact" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-envelope top-link my-contact"></i> Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container main-container">
+    <div class="row">
+        <div class="col-md-8 col-centered">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Check Free Memory in Linux</h1>
+                    <p>Run free <code>-m</code> (the <code>-m</code> means display the amount of memory in megabytes.)
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$</span> <span style="color: #f8f8f2">free</span> <span style="color: #f92672">-</span><span style="color: #f8f8f2">m</span>
+             <span style="color: #f8f8f2">total</span>       <span style="color: #f8f8f2">used</span>       <span style="color: #f8f8f2">free</span>     <span style="color: #f8f8f2">shared</span>    <span style="color: #f8f8f2">buffers</span>     <span style="color: #f8f8f2">cached</span>
+<span style="color: #f8f8f2">Mem:</span>           <span style="color: #ae81ff">495</span>        <span style="color: #ae81ff">482</span>         <span style="color: #ae81ff">13</span>          <span style="color: #ae81ff">0</span>         <span style="color: #ae81ff">26</span>        <span style="color: #ae81ff">362</span>
+<span style="color: #f92672">-/+</span> <span style="color: #f8f8f2">buffers</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">cache</span><span style="color: #f92672">:</span>         <span style="color: #ae81ff">92</span>        <span style="color: #ae81ff">402</span>
+<span style="color: #f8f8f2">Swap:</span>          <span style="color: #ae81ff">508</span>          <span style="color: #ae81ff">0</span>        <span style="color: #ae81ff">508</span>
+</pre></div>
+</p>
+
+<p>The &lsquo;actual&rsquo; free memory is at the second line, 402 MB .To understand more about the memory in Linux, the website <a href="http://www.linuxatemyram.com/">Linux ate my ram</a> explains in humorous way.</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="prev_next">
+                        
+                        <a class="btn btn-default" href="http://blog.morzproject.com/post/convert-multiple-images-to-icon/"><i class="fa fa-arrow-left"></i> Newer
+                            posts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        
+                        <a class="btn btn-default" href="http://blog.morzproject.com/post/enable-root-in-proftpd/">Older posts <i
+                                class="fa fa-arrow-right"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'morzprojectblog';
+    var disqus_identifier = 'http:\/\/blog.morzproject.com\/post\/check-free-memory-linux\/';
+    var disqus_title = 'Check Free Memory in Linux';
+    var disqus_url = 'http:\/\/blog.morzproject.com\/post\/check-free-memory-linux\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-8 col-centered text-center">
+        <div class="footer"><small>&copy;  2015 &ndash; Made with <i class="fa fa-heart"></i> by Rozi</small></div>
+    </div>
+</div>
+</div>
+</body>
+</html>

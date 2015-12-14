@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.morzproject.com/</loc>
+    <lastmod>2015-06-10T08:35:06+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/unheap-jquery-plugins/</loc>
+    <lastmod>2015-06-10T08:35:06+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/contact/</loc>
+    <lastmod>2015-06-09T22:10:41+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/connect-vyprvpn-using-pptp/</loc>
+    <lastmod>2014-06-29T10:16:40+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/install-latest-docker/</loc>
+    <lastmod>2014-06-29T05:21:51+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/login-to-amazon-ec2-using-password/</loc>
+    <lastmod>2013-11-14T21:19:29+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/quick-settings-shortcut-windows/</loc>
+    <lastmod>2013-09-27T03:56:42+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/create-subdomain-apache/</loc>
+    <lastmod>2013-08-27T06:25:13+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/linux-screen/</loc>
+    <lastmod>2013-08-23T17:33:21+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/remove-empty-dir-recursive-linux/</loc>
+    <lastmod>2013-07-09T08:33:00+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/rm-recursive-linux/</loc>
+    <lastmod>2013-07-09T08:25:58+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/simple-string-replace-linux/</loc>
+    <lastmod>2013-06-24T05:06:48+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/quotes-variable/</loc>
+    <lastmod>2013-06-21T07:53:41+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/add-remove-user-from-group-linux/</loc>
+    <lastmod>2013-06-16T05:45:05+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/treesize/</loc>
+    <lastmod>2013-06-14T18:14:48+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/clone-git-using-private-key/</loc>
+    <lastmod>2013-06-14T17:34:35+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/convert-multiple-images-to-icon/</loc>
+    <lastmod>2013-06-13T00:33:48+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/check-free-memory-linux/</loc>
+    <lastmod>2013-06-06T06:07:58+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/enable-root-in-proftpd/</loc>
+    <lastmod>2013-06-02T08:49:19+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/protect-directory-htaccess/</loc>
+    <lastmod>2013-05-31T08:30:57+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/compile-static-libpng/</loc>
+    <lastmod>2013-05-26T07:23:22+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/compile-static-zlib/</loc>
+    <lastmod>2013-05-26T06:23:58+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/check-sha1-md5-windows/</loc>
+    <lastmod>2013-05-25T07:14:02+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/latest-google-chrome-version-number/</loc>
+    <lastmod>2013-05-25T00:01:05+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/truecrypt-tutorial/</loc>
+    <lastmod>2013-05-24T21:30:08+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/resource-editor-win32/</loc>
+    <lastmod>2013-05-24T20:11:12+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/batch-compress-png/</loc>
+    <lastmod>2013-05-24T19:15:18+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/mysql-without-password/</loc>
+    <lastmod>2013-05-24T04:54:16+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/github-explore/</loc>
+    <lastmod>2013-05-23T11:37:15+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/go-language/</loc>
+    <lastmod>2013-05-23T11:20:58+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/git-publish-website/</loc>
+    <lastmod>2013-05-23T04:39:26+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.morzproject.com/post/json-command-line-tool/</loc>
+    <lastmod>2013-05-23T01:26:45+10:00</lastmod>
+  </url>
+  
+</urlset>

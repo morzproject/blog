@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Morz Project | Remove Files Recursively in Linux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/css_js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css_js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto' rel='stylesheet' type='text/css'>
+    <link href="/css_js/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-centered">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="http://blog.morzproject.com/">
+                            <img src="http://blog.morzproject.com//images/logo.svg"/>
+                        </a>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="top-navigation">
+                            <a href="/post" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-database top-link my-archive"></i> Archive</a>
+
+                            <a href="https://github.com/blackrosezy" target="_blank" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-github top-link my-github"></i> Github</a>
+
+                            <a href="/contact" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-envelope top-link my-contact"></i> Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container main-container">
+    <div class="row">
+        <div class="col-md-8 col-centered">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Remove Files Recursively in Linux</h1>
+                    <p>Do you ever try <code>rm -r *.bak</code> and wonder why it is not working like it is supposed to? From the man page (man rm), the definition for <code>-r</code> is :
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">r, -R, --recursive
+              remove directories and their contents recursively
+</pre></div>
+</p>
+
+<p>So basically <code>-r</code> is for directories and their contents recursively. In other words it only deletes recursively, not search recursively for things to be deleted.</p>
+
+<p>A quick fix is simple :
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">find -type f -name <span style="color: #e6db74">&#39;*.bak&#39;</span> -print0  <span style="color: #f8f8f2">|</span> xargs -0 rm
+</pre></div>
+</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="prev_next">
+                        
+                        <a class="btn btn-default" href="http://blog.morzproject.com/post/remove-empty-dir-recursive-linux/"><i class="fa fa-arrow-left"></i> Newer
+                            posts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        
+                        <a class="btn btn-default" href="http://blog.morzproject.com/post/simple-string-replace-linux/">Older posts <i
+                                class="fa fa-arrow-right"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'morzprojectblog';
+    var disqus_identifier = 'http:\/\/blog.morzproject.com\/post\/rm-recursive-linux\/';
+    var disqus_title = 'Remove Files Recursively in Linux';
+    var disqus_url = 'http:\/\/blog.morzproject.com\/post\/rm-recursive-linux\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-8 col-centered text-center">
+        <div class="footer"><small>&copy;  2015 &ndash; Made with <i class="fa fa-heart"></i> by Rozi</small></div>
+    </div>
+</div>
+</div>
+</body>
+</html>

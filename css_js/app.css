@@ -1,0 +1,202 @@
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    color: #161718;
+    background: #e2e8f2;
+}
+
+.highlight pre {
+    font-size: 13px;
+    line-height: 1.42857143;
+    display: block;
+    margin: 0 0 10px;
+    padding: 19px;
+    word-wrap: inherit;
+    word-break: break-all;
+    color: #fff;
+    border: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+}
+
+code {
+    font-size: 90%;
+    font-weight: 700;
+    padding: 2px 4px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #333;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 a {
+    color: #333;
+}
+
+h1 a:hover {
+    color: #333;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h2, h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* centered columns styles */
+.col-centered {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.prev_next {
+    margin: 50px 0 70px 0;
+}
+
+.main-container {
+    font-size: 18px;
+    line-height: 1.618;
+    color: #555;
+}
+
+.main-container p {
+    margin: 2em 0 .5em 0;
+}
+
+.main-container ul li {
+    margin: 2em 0 .25em 0;
+}
+
+.main-container h1 {
+    font-size: 3.7rem;
+    line-height: normal;
+    margin-bottom: 13px;
+}
+
+.main-container .date-published {
+    font-size: 16px;
+    margin: 0;
+    color: #939393;
+}
+
+.main-container .highlight {
+    border-radius: 4px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.preview {
+    border-bottom: solid 3px #f6bb43;
+    padding-bottom: 25px;
+}
+
+.header {
+    padding: 40px 0 40px 0;
+    background-color: #f6bb43;
+}
+
+.pagination {
+    margin: 30px 0 0 0;
+}
+
+.pagination li a {
+    margin: 20px 10px 0 10px;
+    border-radius: 4px;
+    color: #333;
+    font-weight: 700;
+    background-color: #ffcc57;
+    border: solid 2px #f6bb43;
+    line-height: 1;
+}
+
+.pagination li a:hover {
+    margin: 20px 10px 0 10px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #333;
+    border: solid 2px #333;
+    line-height: 1;
+}
+
+.pagination > li:first-child > a:hover {
+    margin-left: 0;
+}
+
+.pagination li.active a {
+    color: #333;
+    font-weight: 700;
+    background-color: transparent;
+    border: transparent;
+}
+
+.pagination li.active a:hover {
+    color: #333;
+    font-weight: 700;
+    background-color: transparent;
+    border: transparent;
+}
+
+.pagination li.disabled {
+    display: none;
+}
+
+.footer {
+    margin: 50px 0 60px 0;
+}
+
+.archive {
+    margin-top: 30px;
+}
+
+.archive ul {
+    list-style-type: none;
+}
+
+.top-navigation {
+    margin-top: 15px;
+    line-height: 2;
+}
+
+.top-navigation a {
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 6px 0 6px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.top-link {
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 5px 3px 5px;
+}
+
+.my-archive {
+    background-color: #8cc051;
+}
+
+.my-github {
+    background-color: #3daed8;
+}
+
+.my-contact {
+    background-color: #957cd8;
+}

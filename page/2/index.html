@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Morz Project | Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/css_js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css_js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto' rel='stylesheet' type='text/css'>
+    <link href="/css_js/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-centered">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="http://blog.morzproject.com/">
+                            <img src="http://blog.morzproject.com//images/logo.svg"/>
+                        </a>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="top-navigation">
+                            <a href="/post" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-database top-link my-archive"></i> Archive</a>
+
+                            <a href="https://github.com/blackrosezy" target="_blank" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-github top-link my-github"></i> Github</a>
+
+                            <a href="/contact" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-envelope top-link my-contact"></i> Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container main-container">
+    <div class="row">
+        <div class="col-md-8 col-centered">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    
+                    <div class="preview">
+                        <h1><a href="/post/create-subdomain-apache/">Create a Subdomain in Apache2</a></h1>
+
+                        <p class="date-published">August 27, 2013</p>
+                        <p>Let&rsquo;s say you have a domain mywebsite.com and you want to add a subdomain blog.mywebsite.com. Here&rsquo;s how to do it.</p>
+
+<p>Create an apache config file:
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">touch /etc/apache2/site-available/blog.mywebsite.com
+vi /etc/apache2/site-available/blog.mywebsite.com
+</pre></div>
+</p>
+
+                        
+                        <div class="read-more-link">
+                            <a class="btn btn-default" href="/post/create-subdomain-apache/">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="preview">
+                        <h1><a href="/post/linux-screen/">Linux Screen Tutorial</a></h1>
+
+                        <p class="date-published">August 23, 2013</p>
+                        <p>Screen is a Linux tool to run multiple virtual terminal from a command line. It is useful when you need to run long processes and you need to close your SSH client. Screen is really life saver.</p>
+
+<h2 id="start:0ae26a85de35813e342ee35b75b3f96c">Start</h2>
+
+<p>Start a new Screen
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">$ screen
+</pre></div>
+</p>
+
+                        
+                        <div class="read-more-link">
+                            <a class="btn btn-default" href="/post/linux-screen/">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="preview">
+                        <h1><a href="/post/remove-empty-dir-recursive-linux/">Remove Empty Directories Recursively in Linux</a></h1>
+
+                        <p class="date-published">July 9, 2013</p>
+                        <div class="highlight" style="background: #272822"><pre style="line-height: 125%">find . -type d -empty -delete
+</pre></div>
+
+
+                        
+                    </div>
+                    
+                    <div class="preview">
+                        <h1><a href="/post/rm-recursive-linux/">Remove Files Recursively in Linux</a></h1>
+
+                        <p class="date-published">July 9, 2013</p>
+                        <p>Do you ever try <code>rm -r *.bak</code> and wonder why it is not working like it is supposed to? From the man page (man rm), the definition for <code>-r</code> is :
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">r, -R, --recursive
+              remove directories and their contents recursively
+</pre></div>
+</p>
+
+                        
+                        <div class="read-more-link">
+                            <a class="btn btn-default" href="/post/rm-recursive-linux/">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="preview">
+                        <h1><a href="/post/simple-string-replace-linux/">Simple String Replacement Tool in Linux</a></h1>
+
+                        <p class="date-published">June 24, 2013</p>
+                        <p>First install mysql client (<code>replace</code> utility is one of a tool in MySQL package).
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">apt-get install mysql-client
+</pre></div>
+</p>
+
+                        
+                        <div class="read-more-link">
+                            <a class="btn btn-default" href="/post/simple-string-replace-linux/">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="/">1</a></li>
+        
+        <li
+        class="active"><a href="/page/2/">2</a></li>
+        
+        <li
+        ><a href="/page/3/">3</a></li>
+        
+        <li
+        ><a href="/page/4/">4</a></li>
+        
+        <li
+        ><a href="/page/5/">5</a></li>
+        
+        <li
+        ><a href="/page/6/">6</a></li>
+        
+        <li
+        >
+        <a href="/page/3/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-8 col-centered text-center">
+        <div class="footer"><small>&copy;  2015 &ndash; Made with <i class="fa fa-heart"></i> by Rozi</small></div>
+    </div>
+</div>
+</div>
+</body>
+</html>

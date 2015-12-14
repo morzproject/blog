@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Morz Project | Connect to VyprVPN using PPTP on Ubuntu Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/css_js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css_js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto' rel='stylesheet' type='text/css'>
+    <link href="/css_js/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-centered">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="http://blog.morzproject.com/">
+                            <img src="http://blog.morzproject.com//images/logo.svg"/>
+                        </a>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="top-navigation">
+                            <a href="/post" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-database top-link my-archive"></i> Archive</a>
+
+                            <a href="https://github.com/blackrosezy" target="_blank" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-github top-link my-github"></i> Github</a>
+
+                            <a href="/contact" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-envelope top-link my-contact"></i> Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container main-container">
+    <div class="row">
+        <div class="col-md-8 col-centered">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Connect to VyprVPN using PPTP on Ubuntu Server</h1>
+                    
+
+<h2 id="1-configuration:d467cea42b0fbe5931bb91a2d43fcd09">1. Configuration</h2>
+
+<p>Install pptp client
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">apt-get install pptp-linux
+</pre></div>
+</p>
+
+<p>Create a new config file. Let&rsquo;s put the name as jp1.vyprvpn:
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">vi /etc/ppp/peers/jp1.vyprvpn
+</pre></div>
+</p>
+
+<p>Insert the following content and save. Replace <code>&lt;EMAIL&gt;</code> with your login to VyprVPN. In this example, I use Japan server for the remote location (<code>jp1.vpn.goldenfrog.com</code>). You may replace to any server from this list <a href="https://www.goldenfrog.com/support/vyprvpn/vpn-setup/linux/pptp">https://www.goldenfrog.com/support/vyprvpn/vpn-setup/linux/pptp</a>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">pty <span style="color: #e6db74">&quot;pptp jp1.vpn.goldenfrog.com --nolaunchpppd&quot;</span>
+lock
+noauth
+nobsdcomp
+nodeflate
+name &lt;EMAIL&gt;
+remotename jp1.vyprvpn
+ipparam jp1.vyprvpn
+require-mppe-128
+usepeerdns
+defaultroute
+persist
+</pre></div>
+</p>
+
+<p>Now edit <code>/etc/ppp/chap-secrets</code> file and replace the <code>&lt;EMAIL&gt;</code> and <code>&lt;PASSWORD&gt;</code> with your VyprVpn credentials:
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #75715e"># Secrets for authentication using CHAP</span>
+<span style="color: #75715e"># client server secret IP addresses</span>
+&lt;EMAIL&gt; jp1.vyprvpn &lt;PASSWORD&gt; *
+</pre></div>
+</p>
+
+<p>Insert the following content to <code>/etc/ppp/ip-up.local</code>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #75715e">#!/bin/bash</span>
+<span style="color: #f8f8f2">H</span><span style="color: #f92672">=</span><span style="color: #e6db74">`</span>ps aux <span style="color: #f8f8f2">|</span> grep <span style="color: #e6db74">&#39;pppd pty&#39;</span> <span style="color: #f8f8f2">|</span> grep -v grep <span style="color: #f8f8f2">|</span> awk <span style="color: #e6db74">&#39;{print $14}&#39;`</span>
+<span style="color: #f8f8f2">DG</span><span style="color: #f92672">=</span><span style="color: #e6db74">`</span>route -n <span style="color: #f8f8f2">|</span> grep UG <span style="color: #f8f8f2">|</span> awk <span style="color: #e6db74">&#39;{print $2}&#39;`</span>
+<span style="color: #f8f8f2">DEV</span><span style="color: #f92672">=</span><span style="color: #e6db74">`</span>route -n <span style="color: #f8f8f2">|</span> grep UG <span style="color: #f8f8f2">|</span> awk <span style="color: #e6db74">&#39;{print $8}&#39;`</span>
+route add -host <span style="color: #f8f8f2">$H</span> gw <span style="color: #f8f8f2">$DG</span> dev <span style="color: #f8f8f2">$DEV</span>
+route del default <span style="color: #f8f8f2">$DEV</span>
+route add default dev ppp0
+</pre></div>
+</p>
+
+<p>Add execution permission to the file:
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">chmod +x /etc/ppp/ip-up.local
+Run
+</pre></div>
+</p>
+
+<h2 id="2-run:d467cea42b0fbe5931bb91a2d43fcd09">2. Run</h2>
+
+<p>Now, start and connect pppd client to remote server:
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">pon jp1.vyprvpn
+</pre></div>
+</p>
+
+<p>to stop type
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">poff jp1.vyprvpn
+</pre></div>
+</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="prev_next">
+                        
+                        <a class="btn btn-default" href="http://blog.morzproject.com/contact/"><i class="fa fa-arrow-left"></i> Newer
+                            posts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        
+                        <a class="btn btn-default" href="http://blog.morzproject.com/post/install-latest-docker/">Older posts <i
+                                class="fa fa-arrow-right"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'morzprojectblog';
+    var disqus_identifier = 'http:\/\/blog.morzproject.com\/post\/connect-vyprvpn-using-pptp\/';
+    var disqus_title = 'Connect to VyprVPN using PPTP on Ubuntu Server';
+    var disqus_url = 'http:\/\/blog.morzproject.com\/post\/connect-vyprvpn-using-pptp\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-8 col-centered text-center">
+        <div class="footer"><small>&copy;  2015 &ndash; Made with <i class="fa fa-heart"></i> by Rozi</small></div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Morz Project | Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/css_js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css_js/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto' rel='stylesheet' type='text/css'>
+    <link href="/css_js/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-centered">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="http://blog.morzproject.com/">
+                            <img src="http://blog.morzproject.com//images/logo.svg"/>
+                        </a>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="top-navigation">
+                            <a href="/post" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-database top-link my-archive"></i> Archive</a>
+
+                            <a href="https://github.com/blackrosezy" target="_blank" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-github top-link my-github"></i> Github</a>
+
+                            <a href="/contact" class="nowrap"
+                               nowrap="nowrap"><i class="fa fa-envelope top-link my-contact"></i> Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container main-container">
+    <div class="row">
+        <div class="col-md-8 col-centered">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    
+                    <div class="preview">
+                        <h1><a href="/post/check-free-memory-linux/">Check Free Memory in Linux</a></h1>
+
+                        <p class="date-published">June 6, 2013</p>
+                        <p>Run free <code>-m</code> (the <code>-m</code> means display the amount of memory in megabytes.)
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$</span> <span style="color: #f8f8f2">free</span> <span style="color: #f92672">-</span><span style="color: #f8f8f2">m</span>
+             <span style="color: #f8f8f2">total</span>       <span style="color: #f8f8f2">used</span>       <span style="color: #f8f8f2">free</span>     <span style="color: #f8f8f2">shared</span>    <span style="color: #f8f8f2">buffers</span>     <span style="color: #f8f8f2">cached</span>
+<span style="color: #f8f8f2">Mem:</span>           <span style="color: #ae81ff">495</span>        <span style="color: #ae81ff">482</span>         <span style="color: #ae81ff">13</span>          <span style="color: #ae81ff">0</span>         <span style="color: #ae81ff">26</span>        <span style="color: #ae81ff">362</span>
+<span style="color: #f92672">-/+</span> <span style="color: #f8f8f2">buffers</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">cache</span><span style="color: #f92672">:</span>         <span style="color: #ae81ff">92</span>        <span style="color: #ae81ff">402</span>
+<span style="color: #f8f8f2">Swap:</span>          <span style="color: #ae81ff">508</span>          <span style="color: #ae81ff">0</span>        <span style="color: #ae81ff">508</span>
+</pre></div>
+</p>
+
+                        
+                        <div class="read-more-link">
+                            <a class="btn btn-default" href="/post/check-free-memory-linux/">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="preview">
+                        <h1><a href="/post/enable-root-in-proftpd/">Enable Login as Root in ProFTPD</a></h1>
+
+                        <p class="date-published">June 2, 2013</p>
+                        <p>WARNING, login as root is always bad practise. This tutorial intended for special case and running from within development environment.</p>
+
+<p>Open <code>proftpd.conf</code>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">vi /etc/proftpd/proftpd.conf
+</pre></div>
+</p>
+
+                        
+                        <div class="read-more-link">
+                            <a class="btn btn-default" href="/post/enable-root-in-proftpd/">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="preview">
+                        <h1><a href="/post/protect-directory-htaccess/">How to Protect a Directory with Password Using .htaccess in Apache2</a></h1>
+
+                        <p class="date-published">May 31, 2013</p>
+                        <p>Create a new <code>.htaccess</code> file
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">cd</span> /var/www/mywebsite.com/secret
+touch .htaccess
+</pre></div>
+</p>
+
+                        
+                        <div class="read-more-link">
+                            <a class="btn btn-default" href="/post/protect-directory-htaccess/">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="preview">
+                        <h1><a href="/post/compile-static-libpng/">Compile Static Library of libpng Using Visual Studio</a></h1>
+
+                        <p class="date-published">May 26, 2013</p>
+                        <p>Compile <code>zlib</code> first (follow <a href="/post/compile-static-zlib/">these steps</a>).</p>
+
+<p>Next, <a href="http://sourceforge.net/projects/libpng/files/libpng16/1.6.17/lpng1617.zip/download">download</a> the latest libpng (e.g) library and extract it.</p>
+
+<p>Launch VS command prompt: Microsoft Visual Studio 2008 -&gt; Visual Studio Tools -&gt; Visual Studio 2008 Command Prompt</p>
+
+<p>Create a new <code>zlib</code> folder inside it:
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ cd </span>lpng1617
+<span style="color: #f8f8f2">$ </span>mkdir zlib
+</pre></div>
+</p>
+
+                        
+                        <div class="read-more-link">
+                            <a class="btn btn-default" href="/post/compile-static-libpng/">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="preview">
+                        <h1><a href="/post/compile-static-zlib/">Compile Static Library of zlib Using Visual Studio</a></h1>
+
+                        <p class="date-published">May 26, 2013</p>
+                        <p><a href="http://zlib.net/zlib128.zip">Download</a> and extract zlib</p>
+
+<p>Launch VS commad prompt: Microsoft Visual Studio 2008 -&gt; Visual Studio Tools -&gt; Visual Studio 2008 Command Prompt</p>
+
+<p>Build:
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ cd </span>zlib-1.2.8
+<span style="color: #f8f8f2">$ </span>nmake /f win32/Makefile.msc
+</pre></div>
+</p>
+
+                        
+                        <div class="read-more-link">
+                            <a class="btn btn-default" href="/post/compile-static-zlib/">Read More <i
+                                    class="fa fa-chevron-right"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="/page/3/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="/">1</a></li>
+        
+        <li
+        ><a href="/page/2/">2</a></li>
+        
+        <li
+        ><a href="/page/3/">3</a></li>
+        
+        <li
+        class="active"><a href="/page/4/">4</a></li>
+        
+        <li
+        ><a href="/page/5/">5</a></li>
+        
+        <li
+        ><a href="/page/6/">6</a></li>
+        
+        <li
+        >
+        <a href="/page/5/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-8 col-centered text-center">
+        <div class="footer"><small>&copy;  2015 &ndash; Made with <i class="fa fa-heart"></i> by Rozi</small></div>
+    </div>
+</div>
+</div>
+</body>
+</html>
