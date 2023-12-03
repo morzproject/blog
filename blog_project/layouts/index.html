@@ -6,8 +6,8 @@
         <div class="col-md-8 col-centered">
             <div class="row">
                 <div class="col-md-12">
-                    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
-                    {{ range $paginator.Pages }}
+					{{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") 5 }}
+					{{ range $paginator.Pages }}
                     <div class="preview">
                         <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
 
